@@ -1,0 +1,58 @@
+@import url(https://fonts.google.com/specimen/Barlow+Condensed);
+
+:root {
+    --primary-color: #474647;
+    --secondary-color: #7BCCC5;
+    --accent1-color: #F7CA39;
+    --accent2-color: #91A03A;
+
+    --heading-font: "Barlow Condensed", sans-serif;
+    --paragraph-font: "Barlow Condensed", sans-serif;
+
+    --nav-background-color: #474647;
+    --nav-link-color:#7BCCC5;
+    --nav-hover-link-color: #F7CA39;
+    --nav-background-hover-color:#474647;
+}
+
+body {
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    padding: 20px
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--paragraph-font);
+    color: var(--primary-color)
+}
+
+header {
+    padding: 20px;
+    background-color: var(--accent1-color);
+}
+
+p {
+    padding:25px
+}
+
+nav {
+    background-color: var(--nav-background-color);
+    font-size: 1.2rem;
+    display: flex;
+}
+
+nav a {
+    display: block;
+    color: var(--nav-link-color);
+    text-decoration: none;
+    padding: 1rem;
+}
+
+nav a:link, nav a:visited {
+    color: var(--nav-link-color)
+}
+
+nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-background-hover-color);
+}
